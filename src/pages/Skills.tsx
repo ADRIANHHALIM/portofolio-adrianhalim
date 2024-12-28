@@ -1,4 +1,4 @@
-import { Code2, Database, FileJson, Globe, Layout, Server } from "lucide-react";
+import { Code2, Database, Layout, Palette, FileCode, BrainCircuit } from "lucide-react";
 
 type Skill = {
   name: string;
@@ -7,35 +7,54 @@ type Skill = {
 };
 
 const skills: Skill[] = [
+  // Android Development
   { 
-    name: "HTML/CSS", 
-    icon: <Globe className="w-12 h-12" />, 
-    category: "Frontend" 
+    name: "XML", 
+    icon: <FileCode className="w-12 h-12" />, 
+    category: "Android Dev" 
   },
   { 
-    name: "JavaScript", 
-    icon: <FileJson className="w-12 h-12" />, 
-    category: "Frontend" 
+    name: "Kotlin", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Android Dev" 
+  },
+  // Frameworks
+  { 
+    name: "Laravel", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Frameworks" 
+  },
+  { 
+    name: "Django", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Frameworks" 
   },
   { 
     name: "React", 
     icon: <Code2 className="w-12 h-12" />, 
-    category: "Frontend" 
+    category: "Frameworks" 
+  },
+  // Design
+  { 
+    name: "Sigma", 
+    icon: <Palette className="w-12 h-12" />, 
+    category: "Design" 
   },
   { 
-    name: "Node.js", 
-    icon: <Server className="w-12 h-12" />, 
-    category: "Backend" 
-  },
-  { 
-    name: "SQL", 
-    icon: <Database className="w-12 h-12" />, 
-    category: "Backend" 
-  },
-  { 
-    name: "UI Design", 
+    name: "Canva", 
     icon: <Layout className="w-12 h-12" />, 
     category: "Design" 
+  },
+  // Programming Languages
+  { 
+    name: "Python", 
+    icon: <BrainCircuit className="w-12 h-12" />, 
+    category: "Languages" 
+  },
+  { 
+    name: "JavaScript", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Languages" 
   }
 ];
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 
 const About = () => {
   return (
-    <div className="section-padding pt-24 min-h-screen">
+    <div className="section-padding pt-32 min-h-screen">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
           <div className="w-32 h-32 mx-auto bg-primary/10 rounded-full flex items-center justify-center mb-6">
