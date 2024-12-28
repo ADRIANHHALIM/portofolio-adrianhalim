@@ -1,4 +1,4 @@
-import { Code2, Database, Layout, Palette, FileCode, BrainCircuit } from "lucide-react";
+import { Code2, Database, Layout, Palette, FileCode, BrainCircuit, Globe } from "lucide-react";
 
 type Skill = {
   name: string;
@@ -7,6 +7,43 @@ type Skill = {
 };
 
 const skills: Skill[] = [
+  // Frontend
+  { 
+    name: "HTML", 
+    icon: <Globe className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "CSS", 
+    icon: <Palette className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "JavaScript", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "React", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  // Backend
+  { 
+    name: "Python", 
+    icon: <BrainCircuit className="w-12 h-12" />, 
+    category: "Backend" 
+  },
+  { 
+    name: "Django", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Backend" 
+  },
+  { 
+    name: "Laravel", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Backend" 
+  },
   // Android Development
   { 
     name: "XML", 
@@ -18,22 +55,6 @@ const skills: Skill[] = [
     icon: <Code2 className="w-12 h-12" />, 
     category: "Android Dev" 
   },
-  // Frameworks
-  { 
-    name: "Laravel", 
-    icon: <Code2 className="w-12 h-12" />, 
-    category: "Frameworks" 
-  },
-  { 
-    name: "Django", 
-    icon: <Code2 className="w-12 h-12" />, 
-    category: "Frameworks" 
-  },
-  { 
-    name: "React", 
-    icon: <Code2 className="w-12 h-12" />, 
-    category: "Frameworks" 
-  },
   // Design
   { 
     name: "Sigma", 
@@ -44,17 +65,6 @@ const skills: Skill[] = [
     name: "Canva", 
     icon: <Layout className="w-12 h-12" />, 
     category: "Design" 
-  },
-  // Programming Languages
-  { 
-    name: "Python", 
-    icon: <BrainCircuit className="w-12 h-12" />, 
-    category: "Languages" 
-  },
-  { 
-    name: "JavaScript", 
-    icon: <Code2 className="w-12 h-12" />, 
-    category: "Languages" 
   }
 ];
 
