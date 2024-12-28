@@ -15,7 +15,6 @@ const Contact = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Here you would typically handle the form submission
     toast({
       title: "Message sent!",
       description: "Thank you for your message. I'll get back to you soon.",
@@ -28,6 +27,16 @@ const Contact = () => {
   ) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleWhatsApp = () => {
+    // Replace with your WhatsApp number
+    window.open("https://wa.me/1234567890", "_blank");
+  };
+
+  const handleLocation = () => {
+    // Replace with your location coordinates
+    window.open("https://maps.google.com/?q=40.7128,-74.0060", "_blank");
   };
 
   return (
@@ -43,11 +52,11 @@ const Contact = () => {
                 <Mail className="w-6 h-6 text-primary" />
                 <span>your.email@example.com</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 cursor-pointer" onClick={handleWhatsApp}>
                 <Phone className="w-6 h-6 text-primary" />
                 <span>+1234567890</span>
               </div>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-4 cursor-pointer" onClick={handleLocation}>
                 <MapPin className="w-6 h-6 text-primary" />
                 <span>Your Location</span>
               </div>
