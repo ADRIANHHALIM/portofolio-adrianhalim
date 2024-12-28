@@ -1,20 +1,42 @@
-import { Progress } from "@/components/ui/progress";
+import { Code2, Database, FileJson, Globe, Layout, Server } from "lucide-react";
 
 type Skill = {
   name: string;
-  level: number;
+  icon: React.ReactNode;
   category: string;
 };
 
 const skills: Skill[] = [
-  { name: "HTML/CSS", level: 90, category: "Frontend" },
-  { name: "JavaScript", level: 85, category: "Frontend" },
-  { name: "React", level: 80, category: "Frontend" },
-  { name: "Node.js", level: 75, category: "Backend" },
-  { name: "Python", level: 70, category: "Backend" },
-  { name: "SQL", level: 80, category: "Backend" },
-  { name: "UI Design", level: 85, category: "Design" },
-  { name: "UX Design", level: 80, category: "Design" },
+  { 
+    name: "HTML/CSS", 
+    icon: <Globe className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "JavaScript", 
+    icon: <FileJson className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "React", 
+    icon: <Code2 className="w-12 h-12" />, 
+    category: "Frontend" 
+  },
+  { 
+    name: "Node.js", 
+    icon: <Server className="w-12 h-12" />, 
+    category: "Backend" 
+  },
+  { 
+    name: "SQL", 
+    icon: <Database className="w-12 h-12" />, 
+    category: "Backend" 
+  },
+  { 
+    name: "UI Design", 
+    icon: <Layout className="w-12 h-12" />, 
+    category: "Design" 
+  }
 ];
 
 const Skills = () => {
@@ -29,16 +51,18 @@ const Skills = () => {
           {categories.map((category) => (
             <div key={category}>
               <h2 className="text-2xl font-semibold mb-6">{category}</h2>
-              <div className="space-y-6">
+              <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-8">
                 {skills
                   .filter((skill) => skill.category === category)
                   .map((skill) => (
-                    <div key={skill.name}>
-                      <div className="flex justify-between mb-2">
-                        <span className="font-medium">{skill.name}</span>
-                        <span className="text-foreground/60">{skill.level}%</span>
+                    <div 
+                      key={skill.name} 
+                      className="flex flex-col items-center justify-center p-4 rounded-lg border hover:shadow-lg transition-all duration-300"
+                    >
+                      <div className="text-primary mb-3">
+                        {skill.icon}
                       </div>
-                      <Progress value={skill.level} className="h-2" />
+                      <span className="font-medium text-center">{skill.name}</span>
                     </div>
                   ))}
               </div>
