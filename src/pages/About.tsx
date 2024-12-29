@@ -19,7 +19,7 @@ const About = () => {
 
         <div className="prose prose-lg mx-auto text-foreground/80">
           <p className="mb-6">
-            Hello, I'm Adrian Halim, a passionate and skilled Full Stack Developer currently pursuing an Informatics degree at Trisakti University.
+            Hello, I'm Adrian Halim, a passionate Front End Developer currently pursuing an Informatics degree at Trisakti University.
           </p>
 
           <p className="mb-6">
@@ -27,7 +27,7 @@ const About = () => {
           </p>
 
           <p className="mb-6">
-            Proficient in both front-end and back-end development, I specialize in crafting seamless user experiences while optimizing application performance. Known for my sharp attention to detail, effective problem-solving, and collaborative communication, I thrive in agile environments and excel at working with cross-functional teams to meet tight deadlines.
+            Proficient in front-end , I specialize in crafting seamless user experiences while optimizing application performance. Known for my sharp attention to detail, effective problem-solving, and collaborative communication, I thrive in agile environments and excel at working with cross-functional teams to meet tight deadlines.
           </p>
 
           <div className="mt-8 flex justify-center">

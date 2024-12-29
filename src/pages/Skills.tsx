@@ -57,7 +57,7 @@ const skills: Skill[] = [
   },
   // Design
   { 
-    name: "Sigma", 
+    name: "Figma", 
     icon: <Palette className="w-12 h-12" />, 
     category: "Design" 
   },
