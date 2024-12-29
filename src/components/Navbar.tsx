@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex-shrink-0">
             <Link to="/" className="text-2xl font-bold text-primary">
-              Portfolio
+              Adrian Halim's Portfolio
             </Link>
           </div>
 
@@ -48,8 +48,11 @@ const Navbar = () => {
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               className="hover:bg-transparent"
             >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              {theme === "light" ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
               <span className="sr-only">Toggle theme</span>
             </Button>
           </div>
@@ -62,8 +65,11 @@ const Navbar = () => {
               onClick={() => setTheme(theme === "light" ? "dark" : "light")}
               className="mr-2 hover:bg-transparent"
             >
-              <Sun className="h-5 w-5 rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" />
-              <Moon className="absolute h-5 w-5 rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" />
+              {theme === "light" ? (
+                <Sun className="h-5 w-5" />
+              ) : (
+                <Moon className="h-5 w-5" />
+              )}
               <span className="sr-only">Toggle theme</span>
             </Button>
             <Button variant="ghost" size="icon" onClick={toggleMenu}>

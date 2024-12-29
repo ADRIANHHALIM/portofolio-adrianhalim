@@ -2,10 +2,10 @@ import { Github, Linkedin, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: "https://github.com", label: "GitHub" },
-    { icon: Linkedin, href: "https://linkedin.com", label: "LinkedIn" },
-    { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
-    { icon: Mail, href: "mailto:your.email@example.com", label: "Email" },
+    { icon: Github, href: "https://github.com/ADRIANHHALIM", label: "GitHub" },
+    { icon: Linkedin, href: "https://www.linkedin.com/in/adrian-halim-2226b5254/", label: "LinkedIn" },
+    { icon: Instagram, href: "https://www.instagram.com/adrianhhalim/", label: "Instagram" },
+    { icon: Mail, href: "mailto:adrianhalim05@example.com", label: "Email" },
   ];
 
   return (
@@ -26,7 +26,7 @@ const Footer = () => {
           ))}
         </div>
         <p className="mt-8 text-center text-base text-foreground/60">
-          © {new Date().getFullYear()} Your Name. All rights reserved.
+          Copyright © {new Date().getFullYear()} Adrian Halim. All rights reserved.
         </p>
       </div>
     </footer>

@@ -38,6 +38,15 @@ const projects: Project[] = [
     image: "/placeholder.svg",
     technologies: ["Figma", "Adobe XD"],
   },
+  {
+    id: 3,
+    title: "Mobile App Design",
+    description: "UI/UX design for a fitness tracking mobile application.",
+    longDescription: "A comprehensive fitness tracking application designed with user experience at its core. The app includes features like workout tracking, nutrition planning, and social sharing capabilities. The design process involved extensive user research, wireframing, and iterative prototyping to ensure optimal usability.",
+    category: "Mobile Development",
+    image: "/placeholder.svg",
+    technologies: ["Figma", "Adobe XD"],
+  },
 ];
 
 const Projects = () => {

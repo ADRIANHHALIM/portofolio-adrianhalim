@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/components/ui/use-toast";
-import { Mail, Phone, MapPin } from "lucide-react";
+import { FaGoogle, FaWhatsapp, FaMapMarkedAlt } from "react-icons/fa";
 
 const Contact = () => {
   const { toast } = useToast();
@@ -30,12 +30,12 @@ const Contact = () => {
   };
 
   const handleWhatsApp = () => {
-    // Replace with your WhatsApp number
-    window.open("https://wa.me/1234567890", "_blank");
+    window.open(
+      "https://wa.me/6281287928805?text=Hello%20Adrian%2C%20I%20would%20like%20to%20discuss%20a%20project!"
+    );
   };
 
   const handleLocation = () => {
-    // Replace with your location coordinates
     window.open("https://maps.google.com/?q=40.7128,-74.0060", "_blank");
   };
 
@@ -49,16 +49,22 @@ const Contact = () => {
             <h2 className="text-2xl font-semibold mb-6">Get in Touch</h2>
             <div className="space-y-6">
               <div className="flex items-center space-x-4">
-                <Mail className="w-6 h-6 text-primary" />
-                <span>your.email@example.com</span>
+                <FaGoogle className="w-6 h-6 text-primary" />
+                <span>adrianhalim05@gmail.com</span>
               </div>
-              <div className="flex items-center space-x-4 cursor-pointer" onClick={handleWhatsApp}>
-                <Phone className="w-6 h-6 text-primary" />
-                <span>+1234567890</span>
+              <div
+                className="flex items-center space-x-4 cursor-pointer"
+                onClick={handleWhatsApp}
+              >
+                <FaWhatsapp className="w-6 h-6 text-primary" />
+                <span>+6281287928805</span>
               </div>
-              <div className="flex items-center space-x-4 cursor-pointer" onClick={handleLocation}>
-                <MapPin className="w-6 h-6 text-primary" />
-                <span>Your Location</span>
+              <div
+                className="flex items-center space-x-4 cursor-pointer"
+                onClick={handleLocation}
+              >
+                <FaMapMarkedAlt className="w-6 h-6 text-primary" />
+                <span>My Location</span>
               </div>
             </div>
           </div>
