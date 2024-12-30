@@ -35,15 +35,15 @@ const skills: Skill[] = [
     category: "Backend" 
   },
   { 
-    name: "Django", 
+    name: "Firebase", 
     icon: <Code2 className="w-12 h-12" />, 
     category: "Backend" 
   },
-  { 
-    name: "Laravel", 
-    icon: <Code2 className="w-12 h-12" />, 
-    category: "Backend" 
-  },
+  // { 
+  //   name: "Laravel", 
+  //   icon: <Code2 className="w-12 h-12" />, 
+  //   category: "Backend" 
+  // },
   // Android Development
   { 
     name: "XML", 
