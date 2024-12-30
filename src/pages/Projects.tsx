@@ -8,18 +8,17 @@ import {
   DialogHeader,
   DialogTitle,
 } from "@/components/ui/dialog";
-import { Github, Figma, Download } from "lucide-react"; // Mengimpor ikon Download
+import { Github, Figma, Download } from "lucide-react";
 
-// Mengubah tipe category menjadi array
 type Project = {
   id: number;
   title: string;
   description: string;
-  category: string[]; // category menjadi array
+  category: string[]; 
   image: string;
   technologies: string[];
   longDescription?: string;
-  videoUrl?: string; // Menambahkan field videoUrl
+  videoUrl?: string;
   links?: { label: string; url: string }[];
 };
 
@@ -29,10 +28,10 @@ const projects: Project[] = [
     title: "CekLadang - Improving Agricultural Productivity and Sustainability",
     description: "CekLadang is here to address the challenges of improving agricultural productivity and sustainability in an innovative way.",
     longDescription: "By integrating cloud computing, machine learning, and mobile application development, CekLadang provides practical solutions for farmers to accurately detect diseases in secondary crops. Utilizing advanced technologies such as DenseNet-201 for disease detection and Firebase for storing analysis results, this application helps farmers monitor crop health, offers treatment recommendations, and provides a history and news feature to support better harvest management. With this app, farmers can detect plant diseases early, access actionable advice, and track their crop health—all at their fingertips. Welcome any questions, feedback, or collaboration opportunities to make this solution even more impactful!. ",
-    category: ["Mobile Development", "UI/UX"],  // Menambahkan UI/UX ke dalam kategori
+    category: ["Mobile Development", "UI/UX"],  
     image: "img/CekLadang.png",
     technologies: ["Kotlin", "Figma", "Android Studio", "Firebase", "Google Cloud Run", "App Engine", "Firestore"],
-    videoUrl: "https://www.youtube.com/watch?v=tfwI0j6WqA4",  // Ganti dengan ID video yang sesuai
+    videoUrl: "https://www.youtube.com/watch?v=tfwI0j6WqA4",  
     links: [
       { label: "GitHub Repository", url: "https://github.com/CekLadang" },
       { label: "Figma Prototype Design", url: "https://www.figma.com/proto/BBrarxL0HWpaVdIUFC8OR7/CekLadang" },
@@ -44,7 +43,7 @@ const projects: Project[] = [
     title: "Animals.Id",
     description: "UI/UX design for innovative platform that aims to redefine pet care in Indonesia.",
     longDescription: "Animals.ID is a digital platform designed to solve key problems that pet owners face. From limited access to veterinary care to time constraints and pet health monitoring, we offer a range of solutions that are both convenient and accessible. Our mission is to ensure that every pet in Indonesia receives the care they deserve, while simplifying the lives of their owners.",
-    category: ["UI/UX"],  // Kategori hanya UI/UX
+    category: ["UI/UX"],  
     image: "img/animalsId1.png",
     technologies: ["Figma"],
     links: [
@@ -57,7 +56,7 @@ const projects: Project[] = [
     title: "IndoWander",
     description: "UI/UX design for app-based platform offering various services within the Indonesian tourism industry.",
     longDescription: "IndoWonder is an app-based platform offering various services within the Indonesian tourism industry. Services include booking transportation tickets, tour guides, travel news, integration with local culinary establishments, tourism tickets, and accommodations. IndoWonder also features a comparison tool to assist consumers in selecting travel destinations based on their budget and preferences.",
-    category: ["UI/UX"],  // Kategori hanya UI/UX
+    category: ["UI/UX"], 
     image: "img/IndoWander.png",
     technologies: ["Figma"],
     links: [
@@ -68,15 +67,16 @@ const projects: Project[] = [
   },
   {
     id: 4,
-    title: "Mobile App Design",
-    description: "UI/UX design for a fitness tracking mobile application.",
-    longDescription: "A comprehensive fitness tracking application designed with user experience at its core. The app includes features like workout tracking, nutrition planning, and social sharing capabilities. The design process involved extensive user research, wireframing, and iterative prototyping to ensure optimal usability.",
-    category: ["Mobile Development"],  // Kategori hanya Mobile Development
-    image: "/placeholder.svg",
-    technologies: ["Figma", "Adobe XD"],
+    title: "Story App from Dicoding",
+    description: "A story app that allows users to create and share their own stories.",
+    longDescription: "Enhance the user experience by integrating Custom Views, Widgets, and WebView for more intuitive and interactive interfaces. Create smooth and engaging animations utilizing Animation and Motion Layout properties. Expand user reach by implementing Localization for multi-language support and Accessibility features to accommodate users with special needs. Enable background functionality with Services to perform tasks in the Background Thread, ensuring seamless operations. Efficiently manage media assets (audio, video, and images) and facilitate their upload to the server using Multipart requests. Incorporate interactive mapping features with the Google Maps API, allowing users to view maps, determine their latitude and longitude using Location Services, and access specific details within a defined radius using Geofences. Adopt comprehensive testing practices to ensure reliability and performance, including unit testing with Test Doubles and UI testing leveraging Idling Resources or MockWebServer. Apply Test-Driven Development (TDD) methodologies to test various Architecture Components effectively. Utilize key Firebase services such as Authentication, Realtime Database, and Firebase Cloud Messaging (FCM) to provide robust backend capabilities and real-time updates.",
+    category: ["Mobile Development"],
+    image: "img/storyappdicoding.png",
+    technologies: ["Kotlin", "Firebase" , "Google Maps API", "Android Studio", "Figma"],
+    videoUrl: "https://www.youtube.com/watch?v=e3v3djK4lsg",
     links: [
-      { label: "Figma Design", url: "https://figma.com/example/fitnessapp" },
-      { label: "GitHub Repository", url: "https://github.com/example/fitnessapp" }
+      // { label: "Figma Design", url: "https://figma.com/example/fitnessapp" },
+      { label: "GitHub Repository", url: "https://github.com/ADRIANHHALIM/StoryDicoding.git" }
     ],
   },
 ];
@@ -84,12 +84,9 @@ const projects: Project[] = [
 const Projects = () => {
   const [filter, setFilter] = useState("All");
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);
-
-  // Memfilter proyek yang memiliki kategori yang sesuai dengan filter yang dipilih
   const filteredProjects = projects.filter(
     (project) => filter === "All" || project.category.includes(filter)
   );
-
   const categories = ["All", "Web Development", "UI/UX", "Mobile Development"];
 
   return (
@@ -165,10 +162,11 @@ const Projects = () => {
                     {selectedProject.videoUrl && (
                       <div className="mt-6">
                         <h4 className="text-xl font-bold">Watch the Video</h4>
-                        <div className="mt-4">
+                        <div className="mt-4 relative pb-[56.25%] overflow-hidden h-0 rounded-lg shadow-lg">
                           <iframe
+                            className="absolute top-0 left-0 w-full h-full"
                             width="100%"
-                            height="315"
+                            height="100%"
                             src={selectedProject.videoUrl.replace("watch?v=", "embed/")}
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
