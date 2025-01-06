@@ -40,6 +40,19 @@ const projects: Project[] = [
   },
   {
     id: 2,
+    title: "My Portofolio Website",
+    description: "Explore my journey as a Fullstack Developer passionate about creating efficient, user-friendly, and visually appealing web solutions. ",
+    longDescription: "This portfolio showcases my expertise in technologies like ReactJS, NodeJS, PHP, CSS, and JavaScript, along with my proficiency in frameworks using React Native. What You'll Find Here: Projects: A collection of my professional and personal projects, demonstrating my problem-solving skills, clean code practices, and attention to detail. Certificates: Proof of my commitment to continuous learning, showcasing my qualifications in web development and related fields. Skills: A comprehensive list of technical skills that highlight my capabilities in both front-end and back-end development. Contact: An easy way to connect with me for collaborations, projects, or inquiries. I am eager to take on challenges, contribute to innovative projects, and grow alongside like-minded professionals. Feel free to explore, and let’s build something amazing together!",
+    category: ["Web Development"],
+    image: "img/webdevportofolio.png",
+    technologies: ["Typescript", "HTML", "Tailwind Css", "React"],
+    links: [
+      // { label: "Figma Design", url: "https://figma.com/example/fitnessapp" },
+      { label: "GitHub Repository", url: "https://github.com/ADRIANHHALIM/StoryDicoding.git" }
+    ],
+  },
+  {
+    id: 3,
     title: "Animals.Id",
     description: "UI/UX design for innovative platform that aims to redefine pet care in Indonesia.",
     longDescription: "Animals.ID is a digital platform designed to solve key problems that pet owners face. From limited access to veterinary care to time constraints and pet health monitoring, we offer a range of solutions that are both convenient and accessible. Our mission is to ensure that every pet in Indonesia receives the care they deserve, while simplifying the lives of their owners.",
@@ -52,7 +65,7 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 3,
+    id: 4,
     title: "IndoWander",
     description: "UI/UX design for app-based platform offering various services within the Indonesian tourism industry.",
     longDescription: "IndoWonder is an app-based platform offering various services within the Indonesian tourism industry. Services include booking transportation tickets, tour guides, travel news, integration with local culinary establishments, tourism tickets, and accommodations. IndoWonder also features a comparison tool to assist consumers in selecting travel destinations based on their budget and preferences.",
@@ -66,10 +79,10 @@ const projects: Project[] = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     title: "Story App from Dicoding",
     description: "A story app that allows users to create and share their own stories.",
-    longDescription: "Enhance the user experience by integrating Custom Views, Widgets, and WebView for more intuitive and interactive interfaces. Create smooth and engaging animations utilizing Animation and Motion Layout properties. Expand user reach by implementing Localization for multi-language support and Accessibility features to accommodate users with special needs. Enable background functionality with Services to perform tasks in the Background Thread, ensuring seamless operations. Efficiently manage media assets (audio, video, and images) and facilitate their upload to the server using Multipart requests. Incorporate interactive mapping features with the Google Maps API, allowing users to view maps, determine their latitude and longitude using Location Services, and access specific details within a defined radius using Geofences. Adopt comprehensive testing practices to ensure reliability and performance, including unit testing with Test Doubles and UI testing leveraging Idling Resources or MockWebServer. Apply Test-Driven Development (TDD) methodologies to test various Architecture Components effectively. Utilize key Firebase services such as Authentication, Realtime Database, and Firebase Cloud Messaging (FCM) to provide robust backend capabilities and real-time updates.",
+    longDescription: "My Portfolio Website is not just a showcase of my technical capabilities but a reflection of my dedication to growth and innovation in the tech field. Through detailed project presentations, certifications, and skill highlights, I aim to provide visitors with an engaging and transparent insight into my development journey. Whether you’re an employer, a collaborator, or someone exploring web development, this portfolio offers a comprehensive overview of my work ethic, creative approach, and technical expertise.",
     category: ["Mobile Development"],
     image: "img/storyappdicoding.png",
     technologies: ["Kotlin", "Firebase" , "Google Maps API", "Android Studio", "Figma"],

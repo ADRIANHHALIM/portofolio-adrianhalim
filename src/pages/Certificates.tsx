@@ -47,7 +47,7 @@ const certificates: Certificate[] = [
     date: "2024",
     images: [
       "img/certifBelajardasarai.png",  
-      "img/certifBelajardsarai2.png",
+      "img/certifBelajardasarai2.png",
     ],
     description:
       "Kelas ini ditujukan untuk pemula yang ingin memulai karier di dunia AI. Setelah mengikuti kelas, siswa diharapkan mampu menelaah berbagai konsep dasar dalam AI beserta penerapannya dengan baik.",
