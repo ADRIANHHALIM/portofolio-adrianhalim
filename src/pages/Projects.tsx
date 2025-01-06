@@ -48,7 +48,7 @@ const projects: Project[] = [
     technologies: ["Typescript", "HTML", "Tailwind Css", "React"],
     links: [
       // { label: "Figma Design", url: "https://figma.com/example/fitnessapp" },
-      { label: "GitHub Repository", url: "https://github.com/ADRIANHHALIM/StoryDicoding.git" }
+      { label: "GitHub Repository", url: "https://github.com/ADRIANHHALIM/portofolio-adrianhalim" }
     ],
   },
   {
