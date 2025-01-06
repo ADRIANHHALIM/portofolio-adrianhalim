@@ -117,6 +117,19 @@ const certificates: Certificate[] = [
     description:
       "Kelas ini ditujukan bagi yang ingin belajar dasar bahasa pemrograman Kotlin dengan mengacu pada standar kompetensi internasional milik Google Developers Authorized Training Partner. Di akhir kelas, siswa paham tentang konsep dasar bahasa pemrograman, functional programming, serta object- oriented programming (OOP) dengan menggunakan Kotlin.",
   },
+  {
+    id: 9,
+    title: "Belajar Dasar Pemograman Web",
+    issuer: "Dicoding Indonesia",
+    date: "2024",
+    images: [
+      "img/CertifBelajarDasarWeb.png",
+      "img/CertifBelajarDasarWeb2.png",
+      "img/CertifBelajarDasarWeb3.png",
+    ],
+    description:
+      "Kelas ini membahas tuntas dasar HTML dan CSS sebagai tiga fondasi pembuatan website. Fondasi tersebut diperlukan untuk Anda yang ingin mengembangkan kemampuan pengembangan website ke tahap yang lebih lanjut. Disusun dan diverifikasi oleh tim expert Dicoding, materi yang disajikan terstruktur dan komprehensif. ",
+  },
   
 ];
 
