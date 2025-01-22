@@ -155,7 +155,7 @@ const About = () => {
         {/* Download CV */}
         <div className="mt-8 flex justify-center">
           <a
-            href="/CV_ADRIANHALIM.pdf"
+            href="/CV_AdrianHalim.pdf"
             download="ADRIAN-HALIM-CV.pdf"
             className="flex items-center gap-2 px-4 py-2 bg-primary text-white rounded-md hover:bg-primary/90 transition"
           >
