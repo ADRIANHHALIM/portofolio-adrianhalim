@@ -6,11 +6,10 @@ import { Download } from "lucide-react";
 const activities = [
   {
     id: 1,
-    title: "Hackathon Participation",
-    date: "2022 - Present",
-    description: "Regularly participate in national and international hackathons to enhance problem-solving skills and apply cutting-edge technologies in innovative projects.",
-    longDescription: "As an active participant in both national and international hackathons, I've developed a strong foundation in rapid prototyping and innovative problem-solving. Notable achievements include winning first place in the 2022 Regional Tech Innovation Challenge and being a finalist in the Global CodeFest 2023. These experiences have enhanced my ability to work under pressure, collaborate in diverse teams, and implement cutting-edge technologies in real-world applications. Through hackathons, I've gained expertise in emerging technologies such as AI/ML, blockchain, and IoT, while building a valuable network within the tech community.",
-    image: "img/hackathon.jpg",
+    title: "Coming Soon",
+    date: "-",
+    description: "lorem impsum",
+    longDescription: "lorem ipsum",
     gallery: [
       "img/hackathon1.jpg",
       "img/hackathon2.jpg",
@@ -21,10 +20,10 @@ const activities = [
   },
   {
     id: 2,
-    title: "Tech Community Member",
-    date: "2021 - Present",
-    description: "Actively engage with tech communities such as ReactJS Indonesia and Kotlin User Group, contributing through discussions, workshops, and open-source projects.",
-    longDescription: "My involvement in tech communities has been instrumental in both my personal growth and contribution to the broader developer ecosystem. As a core member of ReactJS Indonesia and Kotlin User Group, I've organized monthly workshops, mentored junior developers, and contributed to various open-source projects. I've given talks on topics ranging from state management patterns to performance optimization techniques. Additionally, I've helped organize community events that have brought together hundreds of developers, fostering knowledge sharing and collaboration within the local tech scene.",
+    title: "Coming Soon",
+    date: "-",
+    description: "lorem impsum",
+    longDescription: "lorem impsum",
     image: "img/community.jpg",
     gallery: [
       "img/community1.jpg",
@@ -36,10 +35,10 @@ const activities = [
   },
   {
     id: 3,
-    title: "Freelance Web Projects",
-    date: "2020 - Present",
-    description: "Undertook multiple freelance projects, creating customized websites and apps for small businesses, leveraging expertise in ReactJS, Laravel, and UX design.",
-    longDescription: "Throughout my freelance career, I've successfully delivered over 20 web and mobile applications for diverse clients across various industries. My projects have ranged from e-commerce platforms to custom CMS solutions, each tailored to meet specific business needs. Notable projects include developing a comprehensive inventory management system for a retail chain, creating a booking platform for a healthcare provider, and designing a portfolio website for a creative agency. I consistently maintain long-term relationships with clients by providing ongoing support and implementing new features as their businesses grow.",
+    title: "Coming Soon",
+    date: "-",
+    description: "lorem impsum",
+    longDescription: "lorem impsum",
     image: "img/freelance.jpg",
     gallery: [
       "img/freelance1.jpg",

@@ -25,6 +25,21 @@ type Project = {
 const projects: Project[] = [
   {
     id: 1,
+    title: "Weather App - Aplikasi Cuaca Interaktif",
+    description: "Weather App is a modern and interactive weather application that allows users to search for current weather information in various locations around the world.",
+    longDescription: "🌤 Weather App - Interactive Weather App ☔ Weather App is a modern and interactive weather app that allows users to search for the latest weather information in various locations around the world. With a minimalist, responsive and aesthetic design, this application provides a comfortable experience in knowing the weather conditions in real-time. 🔥 Key Features Weather Location Search - Just type the city name, and get weather information instantly. Full Weather View - Displays temperature, weather conditions (sunny, rainy, cloudy, etc.), wind speed, humidity, and air pressure. Interactive Map - Dynamic map showing weather locations with zoom-in & zoom-out features. Animation & Hover Effects - Elegant design with weather icon animations and interactive effects when users interact. Responsive & Mobile-Friendly - Optimized display for various devices, both desktop and mobile. Dark & ​​Light Mode - Dark Mode / Light Mode display options for user comfort in various lighting conditions. Upcoming Weather Forecast - Provides weather forecasts for the next few days. Extreme Weather Alerts - Automatic notifications if there is severe weather such as storms or heavy rain.",
+    category: ["Web Development"],  
+    image: "img/Weatherapp.png",
+    technologies: ["Javascript", "Vue", "Vite", "SCSS", "CSS", "State Management Vuex", "Git"],
+    // videoUrl: "https://www.youtube.com/watch?v=tfwI0j6WqA4",  
+    links: [
+      { label: "GitHub Repository", url: "https://github.com/ADRIANHHALIM/Weather-App" },
+      // { label: "Figma Prototype Design", url: "https://www.figma.com/proto/BBrarxL0HWpaVdIUFC8OR7/CekLadang" },
+      // { label: "Download App", url: "https://drive.google.com/drive/folders/1fRGdmma5kzgR_RIYAWrThaZjV0mcXeXQ" }
+    ],
+  },
+  {
+    id: 1,
     title: "CekLadang - Improving Agricultural Productivity and Sustainability",
     description: "CekLadang is here to address the challenges of improving agricultural productivity and sustainability in an innovative way.",
     longDescription: "By integrating cloud computing, machine learning, and mobile application development, CekLadang provides practical solutions for farmers to accurately detect diseases in secondary crops. Utilizing advanced technologies such as DenseNet-201 for disease detection and Firebase for storing analysis results, this application helps farmers monitor crop health, offers treatment recommendations, and provides a history and news feature to support better harvest management. With this app, farmers can detect plant diseases early, access actionable advice, and track their crop health—all at their fingertips. Welcome any questions, feedback, or collaboration opportunities to make this solution even more impactful!. ",
